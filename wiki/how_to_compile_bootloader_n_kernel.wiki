@@ -1,0 +1,8 @@
+#summary How to compile our modified code
+
+== x-loader ==
+
+Enter the directory and 
+
+$ make omap3530beagle_config
+$ make 
