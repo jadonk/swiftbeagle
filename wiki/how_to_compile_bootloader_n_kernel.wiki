@@ -34,3 +34,17 @@ $ make
 }}}
 
 u-boot.bin will be generated under the directory.
+
+== Linux Kernel ==
+
+Enter the kernel directory and
+
+{{{
+$ copy my.config .config
+$ make uImage
+}}}
+
+If you have muti-core processor, using 'make uImage -j n' (n is the number of CPU cores) will speed up the compilation a lot. uImage will be under arch/arm/boot/ directory.
+
+
+
