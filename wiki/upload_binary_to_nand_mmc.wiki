@@ -2,7 +2,7 @@
 
 == Prerequisite ==
 
-You should have other versions of x-loader and u-boot installed on your BeagleBoard. If you don't, follow the [http://code.google.com/p/beagleboard/wiki/BeagleboardRevCValidation official instruction] to have them. 
+You should have other working versions of x-loader and u-boot installed on your BeagleBoard. If you don't, follow the [http://code.google.com/p/beagleboard/wiki/BeagleboardRevCValidation official instruction] to have them. 
 
 You should have an SD card in FAT32 format. If you have multiple partitions on the SD, make sure the first one is in FAT32. 
 
