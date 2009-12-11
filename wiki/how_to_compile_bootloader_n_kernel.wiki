@@ -24,7 +24,7 @@ $ make
 $ ./signGP x-load.bin
 }}}
 
-x-load.bin.ift will be generated. The difference between x-load.bin and x-load.bin.ift is the later has an additional 8-byte header to tell how large x-load.bin is. 
+x-load.bin.ift will be generated. The difference between x-load.bin and x-load.bin.ift is the latter has an additional 8-byte header to tell how large x-load.bin is. 
 
 == u-boot ==
 
