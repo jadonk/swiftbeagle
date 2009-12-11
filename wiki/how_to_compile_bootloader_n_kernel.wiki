@@ -46,5 +46,22 @@ $ make uImage
 
 If you have muti-core processor, using 'make uImage -j n' (n is the number of CPU cores) will speed up the compilation a lot. uImage will be under arch/arm/boot/ directory.
 
+== uclibc and busybox ==
 
+Enter the buildroot directory and 
 
+{{{
+$ make menuconfig
+$ make
+}}}
+
+will generate the toolchain you need. Copy uClibc.config to toolchain_build_arm/uclibc_xxx directory and change name to .config. Copy busybox.config to project_build_arm/uclibc/busybox_xxx directory and change name to .config. Then in the buildroot directory issue
+
+{{{
+$ make uclibc-clean
+$ make uclibc
+$ make busybox-clean
+$ make busybox
+}}}
+
+Your rootfs (with uclibc and busybox) will be under project_build_arm/uclibc/root directory.
