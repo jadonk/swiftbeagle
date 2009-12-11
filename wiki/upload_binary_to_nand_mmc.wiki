@@ -11,3 +11,11 @@ You should have an SD card in FAT32 format. If you have multiple partitions on t
 Copy x-load.bin.ift, u-boot.bin and uImage to the FAT32 partition.
 
 Follow this [http://elinux.org/BeagleBoardNAND good article] on eLinux.org to write x-loader, u-boot and Kernel to NAND. Note: you may not need the 'nand unlock' if you are using a new version of u-boot.
+
+== Linux rootfs ==
+
+The Linux partition must be the second partition on SD (aka /dev/mmcblk0p2) and its format must be EXT2. Remove everything in the EXT2 partition, uncompress the rootdisk.tar.gz you download from the [http://code.google.com/p/swiftbeagle/downloads/list download page] (or you compiled) and copy everything to the EXT2 partition's root directory. Make sure you use 'cp -avrf' option to preserve links and device nodes. 
+
+You may want to remove /linuxrc, /etc/inittab and /etc/init.d/* (but keep the /etc/init.d/rcS!) to make boot faster.
+
+Unmount the drive and you are done. 
