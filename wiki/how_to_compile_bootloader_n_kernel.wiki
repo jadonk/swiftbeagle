@@ -2,7 +2,7 @@
 
 If you don't want to compile from source, use the compiled binaries from the [http://code.google.com/p/swiftbeagle/downloads/list download page].
 
-You need a toolchain to compile code for arm processor. I recommend [http://www.codesourcery.com/sgpp/lite/arm/ the one] from Code Sourcery (choose the GNU/Linux version in download page).
+You need a toolchain to compile code for arm processor. I recommend [http://www.codesourcery.com/sgpp/lite/arm/ the one] from Code Sourcery (choose the GNU/Linux version in download page). I used the 2009-q1 version since the q3 version may have [http://code.google.com/p/swiftbeagle/wiki/sourcery_toolchain a defect].
 
 == signGP ==
 
