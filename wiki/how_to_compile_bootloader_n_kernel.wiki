@@ -10,7 +10,7 @@ Enter the directory and
 gcc signGP.c -o signGP
 }}}
 
-You will need signGP to sign the x-load.bin.
+You will need signGP to sign x-load.bin.
 
 == x-loader ==
 
@@ -23,3 +23,14 @@ $ ./signGP x-load.bin
 }}}
 
 x-load.bin.ift will be generated. The difference between x-load.bin and x-load.bin.ift is the later has an additional 8-byte header to tell how large x-load.bin is. 
+
+== u-boot ==
+
+Enter the directory and 
+
+{{{
+$ make omap3_beagle_config
+$ make
+}}}
+
+u-boot.bin will be generated under the directory.
