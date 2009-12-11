@@ -4,5 +4,7 @@
 
 Enter the directory and 
 
+{{{
 $ make omap3530beagle_config
 $ make 
+}}}
