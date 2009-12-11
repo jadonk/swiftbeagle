@@ -2,7 +2,15 @@
 
 If you don't want to compile from source, use the compiled binaries from the [http://code.google.com/p/swiftbeagle/downloads/list download page].
 
-== signGP
+== signGP ==
+
+Enter the directory and 
+
+{{{
+gcc signGP.c -o signGP
+}}}
+
+You will need signGP to sign the x-load.bin.
 
 == x-loader ==
 
@@ -11,4 +19,7 @@ Enter the directory and
 {{{
 $ make omap3530beagle_config
 $ make 
+$ ./signGP x-load.bin
 }}}
+
+x-load.bin.ift will be generated. The difference between x-load.bin and x-load.bin.ift is the later has an additional 8-byte header to tell how large x-load.bin is. 
