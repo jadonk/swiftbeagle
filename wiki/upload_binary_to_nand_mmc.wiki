@@ -1,11 +1,13 @@
 #summary How to upload bootloaders and kernel to MMC
 
-== x-load, u-boot and kernel ==
+== Prerequisite ==
 
 You should have other versions of x-loader and u-boot installed on your Beagle Board. If you don't, follow the [http://code.google.com/p/beagleboard/wiki/BeagleboardRevCValidation official instruction] to have them. 
 
-Format an SD card in FAT32 format. If you have multiple partitions on the disk, make sure the first one is in FAT32. 
+You should have an SD card in FAT32 format. If you have multiple partitions on the SD, make sure the first one is in FAT32. 
 
-Then copy x-load.bin.ift, u-boot.bin and uImage to the FAT32 partition.
+== x-load, u-boot and kernel ==
 
-Follow this [http://elinux.org/BeagleBoardNAND good article] on eLinux.org to write x-loader, u-boot and Kernel to NAND. Note: you may not need the 'nand unlock' if you are using 
+Copy x-load.bin.ift, u-boot.bin and uImage to the FAT32 partition.
+
+Follow this [http://elinux.org/BeagleBoardNAND good article] on eLinux.org to write x-loader, u-boot and Kernel to NAND. Note: you may not need the 'nand unlock' if you are using a new version of u-boot.
