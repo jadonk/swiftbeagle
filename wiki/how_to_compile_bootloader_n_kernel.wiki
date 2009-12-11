@@ -1,5 +1,9 @@
 #summary How to compile our modified code
 
+If you don't want to compile from source, use the compiled binaries from the [http://code.google.com/p/swiftbeagle/downloads/list download page].
+
+== signGP
+
 == x-loader ==
 
 Enter the directory and 
